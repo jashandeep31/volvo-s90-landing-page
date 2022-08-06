@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,700&display=swap");
+/*font-family: 'Istok Web', sans-serif;*/
+/*secondary font*/
+@import url("https://fonts.googleapis.com/css2?family=Dorsa&display=swap");
+/*font-family: 'Dorsa', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
+/*font-family: 'Martel Sans', sans-serif;*/
+
+/*red A31621*/
+/*blue BFDBF7*/
+/*dark blue 053C5E*/
+/*green 1F7A8C*/
+/*pure red DB222A*/
+
+body {
+    font-family: "Martel Sans", sans-serif;
+    color: white;
+    background-color: black;
+}
+img {
+    max-width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(19, 19, 19);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #777;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 15px 5%;
+    /*background-color: whitesmoke;*/
+    background-color: black;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+header h1 {
+    font-family: "Istok Web", sans-serif;
+    font-size: 24px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    column-gap: 15px;
+    align-items: center;
+    font-family: "Dorsa", sans-serif;
+}
+header ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: whitesmoke;
+}
+header ul li a.book {
+    color: white;
+    border: 2px solid white;
+    padding: 5px 10px;
+    font-weight: 500;
+    border-radius: 30px;
+    transition-duration: 0.3s;
+}
+
+header ul li a.book:hover {
+    background-color: white;
+    color: black;
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.main img {
+    opacity: 0.4;
+}
+.main .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+.main .text h1 {
+    font-size: 100px;
+    font-weight: 900;
+    font-family: "Istok Web", sans-serif;
+}
+
+.main .text h6 {
+    font-size: 24px;
+}
+.main .text a {
+    background-color: transparent;
+    padding: 10px 30px;
+    color: white;
+    font-weight: 600;
+    margin-top: 50px;
+    outline: none;
+    border: 2px solid white;
+    transition-duration: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+}
+.main .text a:hover {
+    background: white;
+    color: black;
+}
+.banner2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 0;
+    align-items: center;
+}
+.banner2 .video {
+    padding: 40px;
+}
+.banner2 .video video {
+    border-radius: 20px;
+    box-shadow: 5px 5px 0px white;
+}
+
+.banner2 .text {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner2 .text h1 {
+    font-weight: 900;
+    font-size: 50px;
+    font-family: "Istok Web", sans-serif;
+    color: #4cbb17;
+    margin-bottom: 10px;
+}
+.banner2 .text h1 span {
+}
+.banner2 .text h5 {
+    font-size: 24px;
+}
+
+.banner2 .text button {
+    background-color: transparent;
+    margin-top: 30px;
+    padding: 10px 30px;
+    color: white;
+    font-weight: 600;
+    margin-top: 50px;
+    outline: none;
+    border: 2px solid white;
+    transition-duration: 0.3s;
+}
+.banner2 .text button:hover {
+    color: black;
+    background-color: white;
+}
+
+.banner3 {
+    padding: 50px 10%;
+}
+.banner3 .card {
+    background-color: #fafafa;
+    color: black;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.banner3 .card .text {
+    padding: 50px 0px;
+}
+
+.banner3 .card .text h2 {
+    font-size: 24px;
+    font-family: "Istok Web", sans-serif;
+    margin-bottom: 30px;
+}
+.banner3 .card .text h3 {
+    color: #777777;
+    margin-top: 10px;
+    font-size: 18px;
+    border-bottom: 2px solid transparent;
+    /* display: inline-block; */
+    /* width: 50%; */
+}
+.banner3 .card .text h3:hover {
+    border-color: #284e80;
+}
+.banner3 .card .text p {
+    margin-top: 70px;
+    color: #777777;
+    padding-right: 30px;
+}
+.banner3 .card .text button {
+    background-color: transparent;
+    color: #284e80;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: 2px solid #284e80;
+    font-size: 14px;
+    transition-duration: 0.3s;
+}
+.banner3 .card .text button:hover {
+    color: white;
+    background-color: #284e80;
+}
+
+.banner4 {
+    padding: 150px;
+    text-align: center;
+}
+.banner4 h1 {
+    font-size: 40px;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.banner4 ul {
+    display: flex;
+    list-style: none;
+    margin: 50px 0;
+    justify-content: center;
+    column-gap: 60px;
+}
+.banner4 ul h5 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.banner4 ul h6 {
+    font-size: 12px;
+    font-weight: lighter;
+    color: #777777;
+}
+.banner5 {
+    /* padding: 0px 20% 100px 20%; */
+    padding: 150px 15%;
+
+    background-color: white;
+}
+.banner5 h1 {
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.banner5 h1 span {
+    color: #707070;
+}
+.banner5 .cards {
+    display: grid;
+    color: black;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 100px;
+    column-gap: 30px;
+}
+
+.banner5 .cards h3 {
+    margin: 20px 0;
+}
+
+.banner5 .cards p {
+    color: #707070;
+}
+
+.bannerend {
+}
+.bannerend p.disclaimer {
+    padding: 100px 30%;
+    font-size: 13px;
+    color: #707070;
+    text-align: center;
+}
+.bannerend .end {
+    padding: 30px 0;
+    text-align: center;
+    background-color: rgb(19, 19, 19);
+    color: #707070;
+}
+.backbutton {
+    padding: 100px 5% 0 5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.backbutton a i {
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 5px;
+}
+.backbutton a i:hover {
+    background-color: white;
+    color: black;
+}
+
+.otherPageImage {
+    padding: 2% 5%;
+}
+.register {
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+
+.register .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 50px 30px;
+    border: 1px solid #777777;
+    border-radius: 10px;
+    min-width: 30%;
+    background-color: rgb(19, 19, 19);
+    box-shadow: 5px 5px 10px #4cbb17;
+}
+
+.register .card h1 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+.register .card form input {
+    background-color: transparent;
+    border: 1px solid #707070;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 5px;
+    color: white;
+}
+.register .card form input:focus {
+    box-shadow: 5px 5px 10px #4cbb17;
+}
+.register .card form label {
+    font-weight: bolder;
+    padding: 10px 0;
+    display: block;
+}
+
+.register .card form div {
+    margin-bottom: 20px;
+}
+.register .card form button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-top: 40px;
+    background-color: #4cbb17;
+    color: white;
+    font-weight: bolder;
+    transition-duration: 0.3s;
+}
+.register .card form button:hover {
+    transform: scale(1.02);
+}
